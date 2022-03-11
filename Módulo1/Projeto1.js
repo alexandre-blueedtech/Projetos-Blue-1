@@ -61,9 +61,9 @@ function detetive(){
     if(index===0){
       console.log('Você é só mais um curioso observando o que aconteceu.');
     }else if(index===1 && a[4]==='sim'){ // Easter Egg
-      console.log('Parabéns Lucifer, mais uma vez você se intrometendo nos casos da Chloe e descobrindo de maneira misteriosa que a amante matou o homem que ama por engano.')
-      console.log('O que ela queria mesmo era matar a mulher dele, que ficou em choque ao descobrir que o homem que amava tinha uma amante.')
-      console.log('Você demonstrou sua famosa compaixão, seduziu e teve uma ótima noite ao lado da viúva, afinal, nenhuma mulher resiste a você.')
+      console.log('Parabéns Lucifer, mais uma vez se intrometendo nos casos da Chloe e descobrindo de maneira misteriosa que a amante matou o homem que ama por engano.')
+      console.log('O que ela queria mesmo era matar a mulher dele, que ficou sem chão ao descobrir que chorava por um homem que tinha uma amante.')
+      console.log('Você demonstrou sua famosa compaixão, seduziu a viuva e teve uma ótima noite ao lado dela, afinal, nenhuma mulher resiste aos seus encantos.')
     }else if(index===1 || index===2){
       console.log('Você falhou no caso, e não conseguiu nem um suspeito para o crime.')
     }else if(index===3){
