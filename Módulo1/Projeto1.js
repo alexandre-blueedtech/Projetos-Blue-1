@@ -25,18 +25,18 @@ function detetive(){
       console.log(history);
       console.log();
       
-      if(i==4 && index==0){ // Condição para a pergunta do Easter Egg
+      if(i===4 && index===0){ // Condição para a pergunta do Easter Egg
         a[i] = prompt(ee);
       }
       else{
         a[i] = prompt(q[i]);
       }
       console.clear();
-      if(a[i] != 'sim' && a[i] != 'nao'){
+      if(a[i]!='sim' && a[i]!='nao'){
         i--;
       }
-      if(a[i] == 'sim'){
-        index += 1;
+      if(a[i]==='sim'){
+        index ++;
       }
     }
   }
@@ -51,27 +51,27 @@ function detetive(){
     console.log(q[1],a[1]);
     console.log(q[2],a[2]);
     console.log(q[3],a[3]);
-    if((index===0) || (index===1 && a[4]=='sim')){ 
+    if((index===0) || (index===1 && a[4]==='sim')){ 
       console.log(ee,a[4]);
     }else{
       console.log(q[4],a[4]);
     }
     console.log();
     
-    if(index === 0){
-      console.log('Você é só mais um curioso observando de longe o que acontece');
-    }else if(index===1 && a[4]=='sim'){ // Easter Egg
-      console.log('Parabéns Lucifer, mais uma vez você se intrometeu no caso e descobriu que a amante matou o homem que ama por engano.')
-      console.log('O que ela queria mesmo era matar a mulher dele, que fica em choque ao descobrir que o homem que amava tinha uma amante.')
-      console.log('Você demonstra sua famosa compaixão, e tem uma ótima noite ao lado da viúva rsrs.')
+    if(index===0){
+      console.log('Você é só mais um curioso observando o que aconteceu.');
+    }else if(index===1 && a[4]==='sim'){ // Easter Egg
+      console.log('Parabéns Lucifer, mais uma vez você se intrometendo nos casos da Chloe e descobrindo de maneira misteriosa que a amante matou o homem que ama por engano.')
+      console.log('O que ela queria mesmo era matar a mulher dele, que ficou em choque ao descobrir que o homem que amava tinha uma amante.')
+      console.log('Você demonstrou sua famosa compaixão, seduziu e teve uma ótima noite ao lado da viúva, afinal, nenhuma mulher resiste a você.')
     }else if(index===1 || index===2){
-      console.log('Você não é um bom detetive, e não conseguiu nem ao menos suspeitos para o crime.')
+      console.log('Você falhou no caso, e não conseguiu nem um suspeito para o crime.')
     }else if(index===3){
-      console.log('Você não é um bom detetive, mas pelo menos tem suspeitos para prosseguir com a investigação.');
+      console.log('Você falhou no caso, mas obteve uma lista de suspeitos que não deu em nada.');
     }else if(index===4){
-      console.log('Depois é um bom detetive, descobriu quem foi o autor do crime mas o mesmo encontra-se foragido.');
+      console.log('Boa detetive, descobriu quem foi o autor do crime mas, o mesmo encontra-se foragido.');
     }else{
-      console.log('Parabéns detetive, sua solução para o caso foi tão rápida que o culpado não conseguiu fugir');
+      console.log('Ora Ora, temos um Cherloque Holmes por aqui, sua solução para o caso foi tão rápida que a culpada ainda estava chorando sobre o corpo');
     }
   }
 }
