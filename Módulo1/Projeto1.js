@@ -71,7 +71,7 @@ function detetive(){
     }else if(index===4){
       console.log('Boa detetive, descobriu quem foi o autor do crime mas, o mesmo encontra-se foragido.');
     }else{
-      console.log('Ora Ora, temos um Cherloque Holmes por aqui, sua solução para o caso foi tão rápida que a culpada ainda estava chorando sobre o corpo');
+      console.log('Ora Ora, temos um Sherlock Holmes por aqui, sua solução para o caso foi tão rápida que a culpada ainda estava chorando sobre o corpo');
     }
   }
 }
