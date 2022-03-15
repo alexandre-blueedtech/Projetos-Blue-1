@@ -90,7 +90,7 @@ function jokenPo(){
     }else if(placar[1] > placar[0]){
       console.log('Você perdeu o jogo!'.red)
     }else{
-      console.log('Você empatou o jogo!'.lightyellow)
+      console.log('Você empatou o jogo!'.yellow)
     }
 
     console.log();
