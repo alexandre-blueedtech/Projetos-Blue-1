@@ -86,11 +86,11 @@ function jokenPo(){
     console.log();
 
     if(placar[0] > placar[1]){
-      console.log('Você ganhou o jogo!');
+      console.log('Você ganhou o jogo!'.green);
     }else if(placar[1] > placar[0]){
-      console.log('Você perdeu o jogo!')
+      console.log('Você perdeu o jogo!'.red)
     }else{
-      console.log('Você empatou o jogo!')
+      console.log('Você empatou o jogo!'.lightyellow)
     }
 
     console.log();
