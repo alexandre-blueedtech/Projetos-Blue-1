@@ -91,11 +91,8 @@ function jokenPo(){
     
     console.log();
 
-    if(placar[0] > placar[1]){
-      console.log('VOCÊ GANHOU O JOGO =D'.green);
-    }else{
-      console.log('VOCÊ PERDEU O JOGO =('.red)
-    }
+    const ganhador = placar[0] > placar[1] ? 'VOCÊ GANHOU O JOGO =D'.green : 'VOCÊ PERDEU O JOGO =('.red;
+    console.log(ganhador);
 
     console.log();
     
