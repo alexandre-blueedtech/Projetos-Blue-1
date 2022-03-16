@@ -21,16 +21,16 @@ function jokenPo(){
     console.clear();
     console.log("JO".red + "KEN".blue + "PO".red);
     console.log();
-    r = prompt('Escolha quantidade de rodadas: ');
-    if(isNaN(r) || r<=0){
+    r = prompt('Escolha quantidade de rodadas:[numero impar] ');
+    if(isNaN(r) || r<=0 || r%2==0){
       rodadas();
     }
+    r = parseInt(r);
     console.clear();
   }
   
   function game(){   
     for(let i=1; i<=r; i++){
-      
       let choice = false;
       while(choice == false){
         console.clear();
@@ -61,13 +61,19 @@ function jokenPo(){
         placar[0] += 1;
       }
       else if(m==p){
-        console.log(`Vocês empataram a rodada ${i}`);
+        console.log(`Repetir a rodada ${i}`);
+        i--;
       }
       else{
         console.log(`Máquina venceu a rodada ${i}`);
         placar[1] += 1;
       }
       enter();
+
+      if(placar[0] == (r+1)/2 || placar[1] == (r+1)/2){
+        end();
+        break;
+      }
     }
   }
 
@@ -86,17 +92,15 @@ function jokenPo(){
     console.log();
 
     if(placar[0] > placar[1]){
-      console.log('Você ganhou o jogo!'.green);
-    }else if(placar[1] > placar[0]){
-      console.log('Você perdeu o jogo!'.red)
+      console.log('VOCÊ GANHOU O JOGO =D'.green);
     }else{
-      console.log('Você empatou o jogo!'.yellow)
+      console.log('VOCÊ PERDEU O JOGO =('.red)
     }
 
     console.log();
     
     let i = "";
-    i = prompt("jogar de novo?[s/n]").toLowerCase();
+    i = prompt("jogar de novo?[s/n] ".yellow).toLowerCase();
     if(i==='s'){
       jokenPo();
     }else{
@@ -106,7 +110,6 @@ function jokenPo(){
 
   rodadas();
   game();
-  end();
 }
 
 jokenPo();
